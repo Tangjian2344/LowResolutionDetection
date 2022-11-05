@@ -1,0 +1,36 @@
+Dataset:
+  train:
+    patch_size: 192
+    dir: /home/tangjian/Codes/SRdataset/
+    name: DIV2K
+    augment: True
+    test_every: 1000
+    val_set:
+      dir: /home/tangjian/Codes/SRdataset/benchmark/
+      name: Set14
+  test:
+    dir: /home/tangjian/Codes/SRdataset/benchmark/
+    name:
+        - Set5
+        - Set14
+        - B100
+        - Urban100
+        - Manga109
+Train:
+  opt:
+    type: Adam
+    params:
+      lr: 0.001  # 0.001
+  lr_sch:
+    type: StepLR
+    params:
+      step_size: 50000  #200
+      gamma: 0.1
+  loss:
+    type: L1Loss
+Model:
+#  name: MODELSR
+  n_colors: 3
+  n_resblocks : 4                         # number of LFB blocks 4
+  n_feats: 32                            # number of feature maps 32
+  block_feats: 64                        # number of feature maps 128

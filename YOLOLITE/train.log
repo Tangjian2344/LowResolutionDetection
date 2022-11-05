@@ -1,0 +1,11 @@
+2022-03-27 15:03:11 | Optimizer groups: 82 .bias, 82 conv.weight, 79 other
+2022-03-27 15:03:11 | Image sizes 416 train, 416 test
+Using 8 dataloader workers
+Logging results to save
+Starting training for 10 epochs...
+2022-03-27 15:03:24 | 
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+2022-03-27 15:03:54 | 
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+2022-03-27 15:04:24 | 
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size

@@ -1,0 +1,8 @@
+2022-04-29 09:55:13 | test result in LR images
+2022-04-29 09:55:36 | [1;31mClass: ALL | Images: 4952 | Labels: 14976 | P: 0.578260 | R: 0.372220 | mAP@.5 0.396952 | mAP@.5:.95 0.204878[0m
+2022-04-29 09:55:36 | test result in LR images after super-resolution:
+2022-04-29 09:56:22 | [1;31mClass: ALL | Images: 4952 | Labels: 14976 | P: 0.538910 | R: 0.401000 | mAP@.5 0.406296 | mAP@.5:.95 0.220760[0m
+2022-04-29 09:56:22 | test result in HR images
+2022-04-29 09:56:44 | [1;31mClass: ALL | Images: 4952 | Labels: 14976 | P: 0.744258 | R: 0.656015 | mAP@.5 0.721385 | mAP@.5:.95 0.443888[0m
+2022-04-29 09:56:44 | test PSNR ...
+2022-04-29 09:57:10 | [1;31mThe avrage PSNR-Y for 4952 images in VOC2007 is 27.8075[0m

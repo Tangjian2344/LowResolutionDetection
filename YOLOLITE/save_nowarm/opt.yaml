@@ -1,0 +1,26 @@
+pretrained: true
+weights: ./YOLOLITE/model/v5lite-s.pth
+cfg: ./YOLOLITE/model/v5Lite-s.yaml
+data: ./YOLOLITE/data/voc.yaml
+hyp: ./YOLOLITE/data/hyp.finetune.yaml
+epochs: 50
+test_freq: 5
+ema: true
+test_half: true
+batch_size: 64
+img_size:
+- 512
+- 512
+rect: false
+resume: false
+image_weights: false
+device: '0'
+adam: false
+workers: 8
+linear_lr: false
+quad: false
+label_smoothing: 0.0
+save_dir: !!python/object/apply:pathlib.PosixPath
+- YOLOLITE
+- save_nowarm
+combine: false

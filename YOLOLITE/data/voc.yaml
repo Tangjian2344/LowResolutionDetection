@@ -1,0 +1,40 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/passcal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: # 16551 images
+  - /home/tangjian/Harddisk/Graduation_thesis/data/VOC/train2012
+  - /home/tangjian/Harddisk/Graduation_thesis/data/VOC/train2007
+val: /home/tangjian/Harddisk/Graduation_thesis/data/VOC/test2007 # 4952 images
+test: /home/tangjian/Harddisk/Graduation_thesis/data/VOC/test2007 # 4952 images
+
+# number of classes
+nc: 20
+
+# class names
+names:
+  aeroplane: 0
+  bicycle: 1
+  bird: 2
+  boat: 3
+  bottle: 4
+  bus: 5
+  car: 6
+  cat: 7
+  chair: 8
+  cow: 9
+  diningtable: 10
+  dog: 11
+  horse: 12
+  motorbike: 13
+  person: 14
+  pottedplant: 15
+  sheep: 16
+  sofa: 17
+  train: 18
+  tvmonitor: 19
